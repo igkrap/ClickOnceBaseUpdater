@@ -10,6 +10,7 @@
     <LangVersion>7.3</LangVersion>
     <FileAlignment>512</FileAlignment>
     <WarningLevel>4</WarningLevel>
+    <StartupObject>MainApplication.App</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <IsWebBootstrapper>true</IsWebBootstrapper>

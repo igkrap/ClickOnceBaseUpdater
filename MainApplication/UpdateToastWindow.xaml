@@ -8,7 +8,10 @@
         ShowInTaskbar="False"
         Topmost="True"
         Width="300" Height="160">
-    <Border Background="#FF1F2937" CornerRadius="12" Padding="16" Effect="{DynamicResource {x:Static SystemParameters.DropShadowKey}}">
+    <Border Background="#FF1F2937" CornerRadius="12" Padding="16">
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="16" ShadowDepth="4" Opacity="0.4" />
+        </Border.Effect>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
