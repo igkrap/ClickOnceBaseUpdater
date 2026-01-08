@@ -1,0 +1,23 @@
+<Window x:Class="MainApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainApplication" Height="320" Width="520">
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBlock Text="ClickOnce 기반 메인 애플리케이션" FontSize="18" FontWeight="Bold" />
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,16,0,16">
+            <Button Width="140" Margin="0,0,12,0" Click="OnCheckUpdateClick">업데이트 확인</Button>
+            <Button Width="140" Click="OnRunModuleClick">모듈 실행</Button>
+        </StackPanel>
+        <Border Grid.Row="2" BorderBrush="#DDDDDD" BorderThickness="1" CornerRadius="8" Padding="12">
+            <StackPanel>
+                <TextBlock Text="실행 로그" FontWeight="SemiBold" Margin="0,0,0,8" />
+                <TextBox x:Name="LogTextBox" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" IsReadOnly="True" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
