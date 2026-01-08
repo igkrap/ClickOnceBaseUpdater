@@ -13,6 +13,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationRevision>1</ApplicationRevision>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -20,6 +23,10 @@
     <UpdateMode>Foreground</UpdateMode>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdateInterval>1</UpdateInterval>
+    <MapFileExtensions>true</MapFileExtensions>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
